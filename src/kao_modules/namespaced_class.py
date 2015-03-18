@@ -5,7 +5,7 @@ class NamespacedClass:
     
     def __init__(self, namespaceString):
         """ Initialize the namespaced class with the namespace """
-        moduleName, self.className = namespaceString.rsplit('.', 1)
+        moduleName, self.classname = namespaceString.rsplit('.', 1)
         self.module = KaoModule(moduleName)
         
     def instantiate(self, *args, **kwargs):
