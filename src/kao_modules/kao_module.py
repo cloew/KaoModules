@@ -9,6 +9,11 @@ class KaoModule:
         """ Initialize the module with the name of the module it represents """
         self.name = name
         
+    @property
+    def filename(self):
+        """ Return the filename of this module of the filesystem """
+        return self.module.__file__
+        
     @lazy_property
     def module(self):
         """ Represents the actual module underlying this module """
